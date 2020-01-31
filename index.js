@@ -15,16 +15,17 @@ var pool  = mysql.createPool({
 
 //// exports.handler = (event, context, callback) => {
   pool.getConnection(function(err, connection) {
+    if (err) callback('Unable to connect to database');
+
     // Use the connection
     //// context.callbackWaitsForEmptyEventLoop = false;
     connection.query('SELECT * from test', function (error, results, fields) {
       // And done with the connection.
-      connection.release();
-      // Handle error after the release.
-      if (error) throw error;
-      else console.log(results);
+    connection.release();
+
+    console.log(results);
+      
       //// callback(null, results);
-      process.exit();
-    });
+    });        
   });
-//// }
+//// };
