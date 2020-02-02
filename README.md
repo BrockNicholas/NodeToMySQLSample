@@ -9,9 +9,11 @@ This is a starting point for connecting to a MySQL table using Node.js. Can be u
 
 3. Enter your config settings in config/conn.json
 
-4. Run "npm install"
+4. Set a query to your database in index.js
 
-5. Run "npm start" or "npm test" or "node index.js"
+5. Run "npm install"
+
+6. Run "npm start" or "npm test" or "node index.js"
 
 
 

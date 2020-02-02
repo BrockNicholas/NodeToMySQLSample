@@ -19,8 +19,10 @@ var pool  = mysql.createPool({
 
     // Use the connection
     //// context.callbackWaitsForEmptyEventLoop = false;
+
+    // Edit this query to work with your database
     connection.query('SELECT * from test', function (error, results, fields) {
-      // And done with the connection.
+    
     connection.release();
 
     console.log(results);
