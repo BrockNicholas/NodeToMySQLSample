@@ -27,6 +27,14 @@ var pool  = mysql.createPool({
 
       console.log(results);
       
+      //// callback(null, {
+        //// statusCode: responseCode,
+        //// headers: {
+            //// "x-custom-header" : "my custom header value"
+        //// },
+        //// body: JSON.stringify(results)
+      //// });
+
       //// callback(null, results);
     });        
   });
