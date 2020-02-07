@@ -23,9 +23,9 @@ var pool  = mysql.createPool({
     // Edit this query to work with your database
     connection.query('SELECT * from test', function (error, results, fields) {
     
-    connection.release();
+      connection.release();
 
-    console.log(results);
+      console.log(results);
       
       //// callback(null, results);
     });        
