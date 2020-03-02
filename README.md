@@ -15,6 +15,6 @@ This is a starting point for connecting to a MySQL table using Node.js. Can be u
 
 6. Run "npm start" or "npm test" or "node index.js"
 
-
+(7) If using Lambda, make sure your function has execution roles for RDS
 
 
