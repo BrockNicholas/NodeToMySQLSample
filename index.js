@@ -33,9 +33,7 @@ var pool  = mysql.createPool({
             //// "x-custom-header" : "my custom header value"
         //// },
         //// body: JSON.stringify(results)
-      //// });
-
-      //// callback(null, results);
+      //// });      
     });        
   });
 //// };
